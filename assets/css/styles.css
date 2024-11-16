@@ -135,24 +135,6 @@ nav ul li {
   padding: 0.3rem 0;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;  /* Stack image and bio vertically */
-    gap: 1.5rem;  /* Reduce gap between elements */
-  }
-
-  .hero img {
-    width: 80%;  /* Adjust the width of the image on mobile */
-    max-width: none;  /* Remove the max-width on smaller screens */
-    height: auto;  /* Ensure the image scales proportionally */
-  }
-
-  .bio {
-    width: 90%;  /* Make bio section wider on smaller screens */
-    margin-top: 1rem;  /* Add margin between bio and image */
-  }
-}
 /* Hero section ends */
 
 /* More about */
