@@ -1,15 +1,45 @@
+import profileImg from "@/assets/profile.png";
 import { Languages, BrainCircuit, Database } from "lucide-react";
 
 export const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
-      {" "}
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+
+        {/* Heading */}
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
           About <span className="text-primary"> Me</span>
         </h2>
 
+        {/* Centered Profile Image */}
+        <div className="flex justify-center mb-12">
+          <div className="relative">
+            {/* Glow */}
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary to-purple-500 blur opacity-40 animate-pulse-subtle"></div>
+
+            {/* Profile Image */}
+            <img
+              src={profileImg}
+              alt="Manav Makwana"
+              className="
+                relative
+                w-36 h-36 md:w-44 md:h-44
+                rounded-full
+                object-cover
+                border border-primary/30
+                animate-float
+                transition-all duration-300
+                hover:scale-105
+                hover:shadow-[0_0_25px_rgba(167,139,250,0.35)]
+              "
+            />
+          </div>
+        </div>
+
+        {/* Two-column layout (UNCHANGED alignment) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          
+          {/* Left column */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
               Passionate Data Scientist with a Focus on Machine Learning & AI
@@ -32,7 +62,6 @@ export const AboutSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
-                {" "}
                 Get In Touch
               </a>
 
@@ -45,14 +74,16 @@ export const AboutSection = () => {
             </div>
           </div>
 
+          {/* Right column (cards – unchanged) */}
           <div className="grid grid-cols-1 gap-6">
+            {/* Machine Learning */}
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <BrainCircuit className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Machine Learning</h4>
+                  <h4 className="font-semibold text-lg">Machine Learning</h4>
                   <p className="text-muted-foreground">
                     Building, training and evaluating predictive models using supervised 
                     and unsupervised learning techniques for real-world applications.
@@ -60,6 +91,8 @@ export const AboutSection = () => {
                 </div>
               </div>
             </div>
+
+            {/* Data Science */}
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
@@ -74,12 +107,13 @@ export const AboutSection = () => {
                 </div>
               </div>
             </div>
+
+            {/* LLM Systems */}
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Languages className="h-6 w-6 text-primary" />
                 </div>
-
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">LLM Systems</h4>
                   <p className="text-muted-foreground">
@@ -90,6 +124,7 @@ export const AboutSection = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
