@@ -28,6 +28,15 @@ const projects = [
     demoUrl: "#",
     githubUrl: "https://github.com/RustedSwords/Atari-Breakout",
     },
+    {
+    id: 4,
+    title: "Voice Agent Ryan",
+    description: "A real-time voice assistant that schedules meetings, confirms details, and creates calendar events using speech recognition and generation.",
+    image: "/projects/voice_agent.png", 
+    tags: ["Python", "VAPI", "Google Calendar API"],
+    demoUrl: "https://vapi.ai/?demo=true&shareKey=0b7b5d62-d2f9-4cb3-bfd1-9a063e93378b&assistantId=310bcb8b-08c6-4c4a-afe5-453ccf6895e6",
+    githubUrl: "https://github.com/RustedSwords/voice-agent-Ryan",
+}
 ];
 
 export const ProjectsSection = () => {
